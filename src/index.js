@@ -4,6 +4,12 @@ import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import App from './components/App';
 import './index.html';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 
 Vue.use(VueRouter);
 
