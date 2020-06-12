@@ -4,11 +4,6 @@ import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import App from './components/App';
 import './index.html';
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default-dark.css'
-
-Vue.use(VueMaterial)
 
 Vue.use(VueRouter);
 
