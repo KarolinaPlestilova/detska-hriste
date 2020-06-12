@@ -45,6 +45,19 @@ module.exports = {
         ]
       },
       {
+        test: /\.(ttf|woff)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name]-[hash:6].[ext]',
+              outputPath: 'assets/fonts',
+              esModule: false,
+            }
+          }
+        ]
+      },
+      {
         test: /\.vue$/,
         use: 'vue-loader',
       },

@@ -4,6 +4,10 @@ import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import App from './components/App';
 import './index.html';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
 
 Vue.use(VueRouter);
 
