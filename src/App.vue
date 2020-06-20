@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <router-link to="/page1">Go to Page 1</router-link>
-    <router-link to="/page2">Go to Page 2</router-link>
     <Header />
 
     <h1>Vue router</h1>
@@ -10,13 +8,15 @@
 </template>
 
 <script>
-import Header from "./components/Header";
+import Header from "./components/Header.vue";
+import Map from "./components/Map.vue";
 
 export default {
   name: "App",
   components: {
-    Header
-  }
+    Header,
+    Map,
+  },
 };
 </script>
 
