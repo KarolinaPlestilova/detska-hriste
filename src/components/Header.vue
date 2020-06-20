@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul class="menu">
-      <li>
-        <a href="#home">Home</a>
-      </li>
+      <router-link tag="li" to="/"><a>Domů</a></router-link>
       <li>
         <a href="#oprojektu">O projektu</a>
       </li>
@@ -22,7 +20,6 @@
     </ul>
   </div>
 </template>
-
 <script>
 export default {};
 </script>
