@@ -2,6 +2,7 @@
   <div class="container">
     <router-link to="/page1">Go to Page 1</router-link>
     <router-link to="/page2">Go to Page 2</router-link>
+    <Header />
 
     <h1>Vue router</h1>
     <router-view></router-view>
@@ -9,8 +10,13 @@
 </template>
 
 <script>
+import Header from "./components/Header";
+
 export default {
-  name: 'App',
+  name: "App",
+  components: {
+    Header
+  }
 };
 </script>
 
