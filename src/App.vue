@@ -2,7 +2,6 @@
   <div class="container">
     <Header />
 
-    <h1>Vue router</h1>
     <router-view></router-view>
   </div>
 </template>
