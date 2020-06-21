@@ -1,9 +1,16 @@
 <template>
-  <h1>Detail aktivity</h1>
+  <div>
+    <h1>Detail aktivity</h1>
+    <p>{{address}}</p>
+    <p>{{description}}</p>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {},
+  props: ["address", "description"]
+};
 </script>
 
 <style scoped>

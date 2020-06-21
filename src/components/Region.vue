@@ -1,13 +1,13 @@
 <template>
   <div>
     <!-- <h1>Region detail</h1> -->
-    <h2>{{ name }}</h2>
-    <p>{{ description }}</p>
+    <h2>{{ countyName }}</h2>
+    <p>{{ countyDescription }}</p>
     <ul>
       <router-link
-        tag="li"
-        :to="{name: 'detail', params: {id: id, detailId: place.id }}"
         v-for="(place, index) in places"
+        tag="li"
+        :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
         v-bind:key="index"
       >
         <a>{{ place.address }}</a>
@@ -20,8 +20,8 @@
 export default {
   data() {
     return {
-      name: "",
-      description: "",
+      countyName: "",
+      countyDescription: "",
       places: [],
       id: this.$route.params.id
     };
@@ -40,9 +40,9 @@ export default {
           updatedPlaces.push(place);
         });
 
-        this.name = data[this.$route.params.id].name;
-        this.description = data[this.$route.params.id].description;
+        this.countyDescription = data[this.$route.params.id].description;
         this.places = updatedPlaces;
+        this.countyName = data[this.$route.params.id].name;
       } catch (error) {
         alert(error);
       }

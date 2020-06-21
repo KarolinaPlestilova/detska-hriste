@@ -14,7 +14,7 @@ const router = new VueRouter({
   routes: [
     { path: '', component: Map },
     { path: '/region/:id', component: Region, name: 'region' },
-    { path: '/region/:id/detail/:detailId', component: Detail, name: 'detail' }
+    { path: '/region/:id/detail/:detailId', component: Detail, name: 'detail', props: true }
   ],
 });
 
