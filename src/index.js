@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Map from './components/Map';
 import Region from './components/Region';
+import Detail from './components/Detail';
 import App from './App';
 import './index.html';
 
@@ -13,6 +14,7 @@ const router = new VueRouter({
   routes: [
     { path: '', component: Map },
     { path: '/region/:id', component: Region, name: 'region' },
+    { path: '/region/:id/detail/:detailId', component: Detail, name: 'detail' }
   ],
 });
 
