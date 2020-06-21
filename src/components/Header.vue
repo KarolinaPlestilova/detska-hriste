@@ -1,36 +1,35 @@
 <template>
   <div>
+    <img class="logo" src="assets/Logo-projekt_01.png" alt="Logo s dětmi ven" />
     <ul class="menu">
-      <router-link tag="li" to="/"><a>Domů</a></router-link>
-      <li>
-        <a href="#oprojektu">O projektu</a>
-      </li>
-      <li>
-        <a href="#mapahrist">Mapa hřišť a venkovních aktivit</a>
-      </li>
-      <li>
-        <a href="#formulářnapřidáníhřiště">Přidat hřiště</a>
-      </li>
-      <li>
-        <a href="#fotogalerie">Fotogalerie</a>
-      </li>
-      <li>
-        <a href="#kontakt">Kontakt</a>
-      </li>
+      <router-link class="menu-router" tag="li" to="/">
+        <a>Domů</a>
+      </router-link>
+      <router-link class="menu-router" tag="li" to="/o-projektu">
+        <a>O projektu</a>
+      </router-link>
     </ul>
   </div>
 </template>
+
 <script>
 export default {};
 </script>
 
 <style scoped>
+.logo {
+  width: 50%;
+}
+
 .menu {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #282425;
+  background-color: #0da5ce;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
+
 .menu li {
   display: inline-block;
 }
@@ -41,6 +40,11 @@ export default {};
   padding: 20px 30px;
 }
 .menu a:hover {
-  background-color: #4db857;
+  background-color: #c73d8a;
+}
+
+.homepage-obrazek {
+  width: 100%;
+  height: 250px;
 }
 </style>
