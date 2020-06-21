@@ -7,6 +7,10 @@ import Detail from './components/Detail';
 import Projekt from './components/Projekt';
 import App from './App';
 import './index.html';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 
 Vue.use(VueRouter);
 
