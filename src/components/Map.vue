@@ -1,7 +1,7 @@
 <template>
   <div class="map">
-    <section class="kreslenamapa" id="kreslenamapa">
-      <h1>Kam se chcete s dětmi podívat?</h1>
+    <h1>Kam se chcete s dětmi podívat?</h1>
+    <section class="our-map">
       <svg
         xmlns:mapsvg="http://mapsvg.com"
         xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -140,13 +140,12 @@ export default {
 </script>
 
 <style scoped>
-.map {
+.our-map {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: grey;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  background-color: none;
+  padding: 30px;
 }
 .map h1 {
   text-align: center;

@@ -2,10 +2,10 @@
   <div>
     <img class="logo" src="assets/Logo-projekt_01.png" alt="Logo s dětmi ven" />
     <ul class="menu">
-      <router-link class="menu-router" tag="li" to="/">
+      <router-link tag="li" to="/" active-class="active" exact>
         <a>Domů</a>
       </router-link>
-      <router-link class="menu-router" tag="li" to="/o-projektu">
+      <router-link tag="li" to="/o-projektu" active-class="active" exact>
         <a>O projektu</a>
       </router-link>
     </ul>
@@ -26,10 +26,10 @@ export default {};
   padding: 0;
   text-align: center;
   background-color: #0da5ce;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
-
+.menu li.active {
+  background-color: yellow;
+}
 .menu li {
   display: inline-block;
 }
@@ -38,6 +38,7 @@ export default {};
   color: white;
   text-decoration: none;
   padding: 20px 30px;
+  font-weight: 500;
 }
 .menu a:hover {
   background-color: #c73d8a;
