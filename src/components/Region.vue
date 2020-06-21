@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import { countiesList } from "../list";
-
 export default {
   data() {
     return {
@@ -20,16 +18,23 @@ export default {
       places: []
     };
   },
-  created() {
-    countiesList.forEach((item, index) => {
-      const key = Object.keys(countiesList[index]);
-
-      if (key[0] === this.$route.params.id) {
-        this.name = item[this.$route.params.id].name;
-        this.description = item[this.$route.params.id].description;
-        this.places = item[this.$route.params.id].places;
+  methods: {
+    async fetchData() {
+      try {
+        const response = await fetch(
+          "https://detska-hriste.firebaseio.com/countiesList.json"
+        );
+        const data = await response.json();
+        this.name = data[this.$route.params.id].name;
+        this.description = data[this.$route.params.id].description;
+        this.places = data[this.$route.params.id].places;
+      } catch (error) {
+        alert(error);
       }
-    });
+    }
+  },
+  created() {
+    this.fetchData();
   }
 };
 </script>
