@@ -1,4 +1,5 @@
 <template>
+  <!-- Mapa SVG, která je na hlavní stránce, je proklikávací, dostanu se na stránku Region - Komponenta Region.vue -->
   <div class="map">
     <h1>Kam se chcete s dětmi podívat?</h1>
     <section class="our-map">
