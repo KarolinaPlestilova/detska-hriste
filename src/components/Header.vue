@@ -1,11 +1,7 @@
 <template>
   <!-- Zde je hlavní komponenta HEADER + logo - stejná na všech stránkách -->
   <div class="header">
-    <img
-      class="logo"
-      src="assets/img/Logo-projekt_03.png"
-      alt="Logo s dětmi ven"
-    />
+    <img class="logo" src="assets/img/Logo-projekt_03.png" alt="Logo s dětmi ven" />
     <ul class="menu">
       <router-link tag="li" to="/" active-class="active" exact>
         <a>Domů</a>
@@ -23,14 +19,13 @@ export default {};
 
 <style scoped>
 * {
-  font-family: "Rubik", sans-serif;
   margin: 0;
   font-size: 20px;
   line-height: 1.5;
 }
 .logo {
   width: 50%;
-  padding: 10px;
+  padding: 15px;
 }
 
 .menu {
@@ -68,5 +63,19 @@ export default {};
   align-items: center;
   margin: 20px 0 40px 0;
   background-color: #c73d8a;
+}
+.pruh-sedy {
+  background-color: #f0f0f0;
+  padding: 45px 0px;
+  position: relative;
+}
+
+.obrazek-mapa {
+  position: absolute;
+  right: 60px;
+  bottom: 80px;
+  width: 10%;
+  max-width: 100%;
+  height: auto;
 }
 </style>

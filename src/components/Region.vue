@@ -77,7 +77,6 @@ export default {
 
 <style scoped>
 * {
-  font-family: "Rubik", sans-serif;
   margin: 0;
 }
 .button {
