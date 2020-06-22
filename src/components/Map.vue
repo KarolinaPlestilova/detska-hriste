@@ -131,6 +131,7 @@
       </section>
     </div>
     <div class="maly-pruh">
+      <img class="obrazek-mapa" src="assets/img/Ikony_800x800_7.png" alt="Ikonka houpaní koník" />
       <p>Hledáme pro vás nová místa, nápady na celodenní výlety a zábavu na každý den. Bez rozdílu zda je to jen na pár hodin nebo na celý víkend.</p>
     </div>
   </div>
@@ -153,6 +154,7 @@ export default {
   width: 100%;
   background-color: none;
   padding: 30px;
+  position: relative;
 }
 .map h1 {
   text-align: center;
@@ -184,16 +186,24 @@ export default {
   text-align: center;
 }
 .kam {
-  display: inline-block;
+  display: flex;
   background-color: #0da5ce;
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  align-items: center;
   text-align: center;
+  color: white;
   position: absolute;
-  left: 60px;
+  left: 50px;
 }
-.hlavni-div {
-  position: relative;
+.obrazek-mapa {
+  position: absolute;
+  max-width: 100%;
+  width: 10%;
+  height: auto;
+  right: 60px;
+  bottom: 60px;
+  float: right;
 }
 </style>

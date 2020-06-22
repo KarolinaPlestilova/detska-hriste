@@ -34,20 +34,21 @@ export default {};
   text-align: center;
   background-color: #0da5ce;
   border-radius: 7px;
+  display: flex;
+  list-style-type: none;
 }
 .menu li.active {
   background-color: rgb(245, 180, 60);
   border-radius: 7px 0 0 7px;
 }
-.menu li {
-  display: inline-block;
-}
+
 .menu a {
-  display: inline-block;
+  display: flex;
   color: white;
   text-decoration: none;
   padding: 20px 30px;
   font-weight: 500;
+  justify-content: center;
 }
 .menu a:hover {
   background-color: #c73d8a;
@@ -63,11 +64,6 @@ export default {};
   align-items: center;
   margin: 20px 0 40px 0;
   background-color: #c73d8a;
-}
-.pruh-sedy {
-  background-color: #f0f0f0;
-  padding: 45px 0px;
-  position: relative;
 }
 
 .obrazek-mapa {
