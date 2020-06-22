@@ -19,16 +19,9 @@ export default {
 
 <style lang="css">
 * {
-  box-sizing: border-box;
-}
-
-html {
   font-family: "Rubik", sans-serif;
+  margin: 0;
   font-size: 20px;
   line-height: 1.5;
-}
-
-body {
-  margin: 0;
 }
 </style>
