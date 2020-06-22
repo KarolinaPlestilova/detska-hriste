@@ -1,7 +1,11 @@
 <template>
   <!-- Zde je hlavní komponenta HEADER + logo - stejná na všech stránkách -->
   <div class="header">
-    <img class="logo" src="assets/img/Logo-projekt_03.png" alt="Logo s dětmi ven" />
+    <img
+      class="logo"
+      src="assets/img/Logo-projekt_03.png"
+      alt="Logo s dětmi ven"
+    />
     <ul class="menu">
       <router-link tag="li" to="/" active-class="active" exact>
         <a>Domů</a>
@@ -37,9 +41,16 @@ export default {};
   display: flex;
   list-style-type: none;
 }
+
+ul {
+  width: 350px;
+}
+li {
+  width: 50%;
+}
 .menu li.active {
-  background-color: rgb(245, 180, 60);
-  border-radius: 7px 0 0 7px;
+  background-color: #ff790b;
+  border-radius: 7px 0px 0px 7px;
 }
 
 .menu a {
@@ -51,7 +62,8 @@ export default {};
   justify-content: center;
 }
 .menu a:hover {
-  background-color: #c73d8a;
+  background-color: #ffce00;
+  border-radius: 7px;
 }
 
 .homepage-obrazek {

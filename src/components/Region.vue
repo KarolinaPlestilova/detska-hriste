@@ -6,22 +6,33 @@
       <p>{{ countyDescription }}</p>
     </div>
 
-    <Div>
+    <div class="karty">
       <b-card
         class="card"
+        bg-variant="light"
         v-for="(place, index) in places"
         v-bind:key="index"
         :title="place.activity"
       >
-        <b-card-text>{{ place.address }}</b-card-text>
+        <b-card-text>
+          {{ place.address }}
+        </b-card-text>
 
         <router-link
-          :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
+          :to="{
+            name: 'detail',
+            params: {
+              id: id,
+              detailId: place.id,
+              description: place.description,
+              address: place.address,
+            },
+          }"
         >
           <b-button class="button">Zobrazit více</b-button>
         </router-link>
       </b-card>
-    </Div>
+    </div>
     <!-- Původní router link z hackathon -->
 
     <!-- <ul>
@@ -44,7 +55,7 @@ export default {
       countyName: "",
       countyDescription: "",
       places: [],
-      id: this.$route.params.id
+      id: this.$route.params.id,
     };
   },
   methods: {
@@ -67,18 +78,22 @@ export default {
       } catch (error) {
         alert(error);
       }
-    }
+    },
   },
   created() {
     this.fetchData();
-  }
+  },
 };
 </script>
 
 <style scoped>
 * {
-  margin: 0;
+  margin: 20px;
 }
+/* .karty {
+  display: flex;
+  flex-direction: column;
+} */
 .button {
   color: whitesmoke;
   background-color: #0da5ce;
