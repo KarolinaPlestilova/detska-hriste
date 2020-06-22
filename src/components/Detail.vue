@@ -1,13 +1,10 @@
 <template>
   <!-- Komponenta, která vypisuje detail hriště - aktivity -->
-  <div class="detail-hriste">
-    <p>{{ address }}</p>
-    <p>{{ description }}</p>
-    <img
-      class="detail-hriste"
-      src="assets/img/hriste-foto.jpg"
-      alt="Fotografie hriště"
-    />
+  <div>
+    <div>
+      <p>{{ address }}</p>
+      <p>{{ description }}</p>
+    </div>
   </div>
 </template>
 
@@ -24,9 +21,5 @@ export default {
   margin: 0;
   font-size: 20px;
   line-height: 1.5;
-}
-
-.detail-hriste {
-  width: 80%;
 }
 </style>
