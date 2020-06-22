@@ -6,34 +6,23 @@
       <p>{{ countyDescription }}</p>
     </div>
 
-    <b-card bg-variant="light" text-variant="blue" title="Card Title">
-      <b-card-text>With supporting text below as a natural lead-in to additional content.</b-card-text>
-      <b-button href="#" variant="primary">Go somewhere</b-button>
+    <!-- Vzor bootstrap card -->
+
+    <b-card
+      bg-variant="light"
+      text-variant="blue"
+      v-for="(place, index) in places"
+      v-bind:key="index"
+      :title="place.activity"
+    >
+      <b-card-text>{{ place.address }}</b-card-text>
+
+      <router-link
+        :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
+      >
+        <b-button variant="primary">KLIKNI</b-button>
+      </router-link>
     </b-card>
-
-    <router-link
-      v-for="(place, index) in places"
-      :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
-      v-bind:key="index"
-    >
-      <b-card bg-variant="light" text-variant="blue" :title="place.activity">
-        <b-card-text>{{ place.address }}</b-card-text>
-        <b-button variant="primary">KLIKNI</b-button>
-      </b-card>
-    </router-link>
-
-    <!-- Můj router link, který je ale proklikávací celý -->
-
-    <!-- <router-link
-      v-for="(place, index) in places"
-      :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
-      v-bind:key="index"
-    >
-      <b-card bg-variant="light" text-variant="blue" :title="place.activity">
-        <b-card-text>{{ place.address }}</b-card-text>
-        <b-button variant="primary">KLIKNI</b-button>
-      </b-card>
-    </router-link>-->
 
     <!-- Původní router link z hackathon -->
 

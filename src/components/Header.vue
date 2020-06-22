@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <img class="logo" src="assets/Logo-projekt_01.png" alt="Logo s dětmi ven" />
+  <div class="header">
+    <img class="logo" src="assets/img/Logo-projekt_02.png" alt="Logo s dětmi ven" />
     <ul class="menu">
       <router-link tag="li" to="/" active-class="active" exact>
         <a>Domů</a>
