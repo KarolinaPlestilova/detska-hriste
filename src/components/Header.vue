@@ -1,7 +1,11 @@
 <template>
   <!-- Zde je hlavní komponenta HEADER + logo - stejná na všech stránkách -->
   <div class="header">
-    <img class="logo" src="assets/img/Logo-projekt_02.png" alt="Logo s dětmi ven" />
+    <img
+      class="logo"
+      src="assets/img/Logo-projekt_03.png"
+      alt="Logo s dětmi ven"
+    />
     <ul class="menu">
       <router-link tag="li" to="/" active-class="active" exact>
         <a>Domů</a>
@@ -26,6 +30,7 @@ export default {};
 }
 .logo {
   width: 50%;
+  padding: 10px;
 }
 
 .menu {
@@ -62,5 +67,6 @@ export default {};
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 0 40px 0;
+  background-color: #c73d8a;
 }
 </style>

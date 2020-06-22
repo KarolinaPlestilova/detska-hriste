@@ -9,13 +9,13 @@
 <script>
 export default {
   methods: {},
-  props: ["address", "description"]
+  props: ["address", "description"],
 };
 </script>
 
 <style scoped>
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: "Lora", serif;
   margin: 0;
   font-size: 20px;
   line-height: 1.5;
