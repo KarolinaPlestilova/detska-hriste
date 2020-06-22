@@ -6,24 +6,22 @@
       <p>{{ countyDescription }}</p>
     </div>
 
-    <!-- Vzor bootstrap card -->
-
-    <b-card
-      bg-variant="light"
-      text-variant="blue"
-      v-for="(place, index) in places"
-      v-bind:key="index"
-      :title="place.activity"
-    >
-      <b-card-text>{{ place.address }}</b-card-text>
-
-      <router-link
-        :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
+    <Div>
+      <b-card
+        class="card"
+        v-for="(place, index) in places"
+        v-bind:key="index"
+        :title="place.activity"
       >
-        <b-button variant="primary">KLIKNI</b-button>
-      </router-link>
-    </b-card>
+        <b-card-text>{{ place.address }}</b-card-text>
 
+        <router-link
+          :to="{name: 'detail', params: {id: id, detailId: place.id, description: place.description, address: place.address}}"
+        >
+          <b-button class="button">Zobrazit více</b-button>
+        </router-link>
+      </b-card>
+    </Div>
     <!-- Původní router link z hackathon -->
 
     <!-- <ul>
@@ -77,4 +75,19 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+.button {
+  color: whitesmoke;
+  background-color: #0da5ce;
+}
+.card-body {
+  margin: 15px;
+}
+.card-title {
+  color: #4dad38;
+}
+</style>

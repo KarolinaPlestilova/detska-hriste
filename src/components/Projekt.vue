@@ -1,4 +1,5 @@
 <template>
+  <!-- Easy HTML stránka o projektu, troška povídání pro zaplnění informací -->
   <div>
     <article class="projekt">
       <h1>O projektu</h1>
@@ -12,6 +13,12 @@ export default {};
 </script>
 
 <style scoped>
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
 .projekt h1 {
   font-weight: 500;
   text-align: center;

@@ -138,6 +138,12 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
 .our-map {
   display: flex;
   justify-content: center;

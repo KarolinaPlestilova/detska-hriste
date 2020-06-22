@@ -1,4 +1,5 @@
 <template>
+  <!-- Komponenta, která vypisuje detail hriště - aktivity -->
   <div>
     <p>{{ address }}</p>
     <p>{{ description }}</p>
@@ -8,8 +9,15 @@
 <script>
 export default {
   methods: {},
-  props: ["address", "description"],
+  props: ["address", "description"]
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+</style>
